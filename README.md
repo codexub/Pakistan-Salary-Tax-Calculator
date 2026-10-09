@@ -132,10 +132,9 @@ pakistan-salary-tax-calculator/
 │   └── data/                    verified rule sets for each tax year, interface wording
 ├── tests/                       Vitest suites + fixtures/expected.json
 ├── tools/                       independent Python reference calculators
-└── docs/                        product documents, verification record, transcripts/
+└── docs/                        product documents and verification record
 ```
 
-`docs/transcripts/` contains [`session-transcript.md`](docs/transcripts/session-transcript.md), the transcript of this project's Claude Code session from 2026-10-08 22:16 UTC to 2026-10-09 01:53 UTC. It was made by a script from a copy of the session's `.jsonl` export (a copy from which I omitted irrelevant content), and it is not a summary. It contains only the user and assistant messages, verbatim and in order. Tool calls and outputs, Claude's internal reasoning and system metadata are left out.
 
 ## Deployment
 
@@ -161,7 +160,6 @@ Netlify adds HTTPS, with HSTS and an HTTP→HTTPS redirect. There are no serverl
 | [docs/TEST_PLAN.md](docs/TEST_PLAN.md) | Test design, coverage matrix, results log |
 | [docs/manual-test-checklist.md](docs/manual-test-checklist.md) | Manual checks with expected values |
 | [docs/verification.md](docs/verification.md) | Evidence for each story; failed and untested items |
-| [docs/transcripts/session-transcript.md](docs/transcripts/session-transcript.md) | AI session transcript: user and assistant messages |
 
 **Status (audit 2026-10-09):** all **14 stories** and all **5 technical criteria** are **Implemented**. One criterion, US-09-AC1 (the breakdown's legal citations must link to the FBR documents), failed in the audit; it was fixed, tested, and then re-checked by me in Safari, Chrome and Firefox. Evidence is in [docs/verification.md](docs/verification.md).
 

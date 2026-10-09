@@ -76,7 +76,7 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 **Not completed by Claude:**
 - **Clean-copy check in a browser:** the clean copy was checked over HTTP only. Interactive browser checks were done on the working copy before the file reorganisation; the reorganisation changed only file locations, and the same 358 tests pass.
 - **Offline install/build:** not attempted, because a clean install needs the npm registry and Claude had no network-isolated environment. The reviewer reports an offline run passed earlier.
-- **`docs/transcripts/`:** now contains `session-transcript.md`, made by a script from the owner's copy of the session `.jsonl` (`ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl`, in which the owner omitted irrelevant content). It covers 2026-10-08 22:16 UTC to 2026-10-09 01:53 UTC and contains only user and assistant messages, verbatim and in order, so it is not a summary. It replaced an earlier conversion (`session-transcripts.md`). The full native `.jsonl` is not in the repository.
+- **`docs/transcripts/`:** a session transcript was published here for a time, then removed from the repository at the owner's request. It is kept locally only and listed in `.gitignore`.
 
 ### Public repository verification
 
