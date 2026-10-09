@@ -7,6 +7,8 @@ A single-page calculator for **salaried individuals in Pakistan**. You enter you
 
 It covers **FY 2025-26 (Tax Year 2026)** and **FY 2026-27 (Tax Year 2027)** and runs entirely in your browser.
 
+**Live site:** https://pk-salary-tax-calculator.netlify.app · **Source:** https://github.com/codexub/Pakistan-Salary-Tax-Calculator
+
 **Who it serves:** a salaried employee planning a budget or comparing a salary offer who wants to know what they actually keep after income tax, and why.
 
 **Why I chose it** (in my words): "What's better than to have an in depth salary tax calculator for Pakistani Residents, that they understand each break down of their and how the finalized amount being made up in accordance with Pakistani Laws. So, I believe, it's a general need for every job person, in order to have a better understanding of their take home salary."
@@ -135,6 +137,17 @@ pakistan-salary-tax-calculator/
 
 `docs/transcripts/` holds the native exports of the AI sessions, in their original formats, as added by me. No summaries are presented as transcripts.
 
+## Deployment
+
+The app is hosted on **Netlify** (free plan) at **https://pk-salary-tax-calculator.netlify.app**, deployed from the `main` branch of the GitHub repository. Every push to `main` triggers a new build and deploy.
+
+[`netlify.toml`](netlify.toml) sets:
+- build command `npm run build`, publish folder `dist`, and Node 24.21.0;
+- security headers: a Content-Security-Policy with `connect-src 'none'` and `frame-ancestors 'none'`, plus `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: no-referrer` and a restrictive `Permissions-Policy`;
+- one-year immutable caching for the hashed assets.
+
+Netlify adds HTTPS, with HSTS and an HTTP→HTTPS redirect. There are no serverless functions or server code.
+
 ## Project documents
 
 | Document | Contents |
@@ -183,3 +196,4 @@ pakistan-salary-tax-calculator/
 - jsdom can't simulate keyboard toggling of `<summary>`, so that part is verified in the browser only.
 - Super tax, exemptions and credits are out of scope (see above).
 - nvm's global default on my machine is still Node 16. Run `nvm use` in the project folder before any npm command.
+- **Netlify badge script:** Netlify injects its "Powered by Netlify" badge script (`/.netlify/scripts/hud`) into the hosted page. The site's CSP blocks its inline code, so the badge doesn't appear and the browser console shows CSP errors from it. It is not part of this project, and Netlify's documentation states it makes no network requests. It can be switched off in Netlify under **Project configuration → General → Powered by Netlify badge**.

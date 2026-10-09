@@ -89,3 +89,24 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 | Fresh anonymous clone | `nvm use` → Node v24.21.0 / npm 11.19.0; `npm ci` 91 packages, 0 vulnerabilities; `npm test` **358 passed**; `npm run build` succeeds |
 | GitHub page | README renders as the repository's front page |
 
+## Live deployment verification (Netlify, 2026-10-09)
+
+**URL:** https://pk-salary-tax-calculator.netlify.app. The site owner created it on Netlify from the GitHub repository, renamed it, and set Visitor access so the production site is public. Before that, the deploy returned HTTP 401 and redirected to Netlify login.
+
+| Check | Method | Result |
+|---|---|---|
+| Public and serving this build | `curl` without credentials | HTTP 200; title "Pakistan Salary Tax Estimator"; asset files `index-dv841QcC.js` and `index-By32YrId.css` are **identical in name to the local build**; the app's own strings are present in the JS |
+| HTTPS | `curl -I http://…` | 301 to https; `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload` |
+| Security headers from `netlify.toml` | `curl -I` | Content-Security-Policy (incl. `connect-src 'none'` and `frame-ancestors 'none'`), `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: no-referrer`, `Permissions-Policy`; `/assets/*` → `Cache-Control: public,max-age=31536000,immutable` |
+| Calculations (B) | browser pane on the live URL; expected values from the fixture | PASS for EX-26-37, EX-27-39, EX-26-25, EX-26-26 (surcharge cliff), EX-27-08 and EX-27-07 (s.219 rounding), EX-27-01 (zero), EX-27-45 (lakh input), EX-27-24 and EX-27-25 (slab 7/8 boundary) |
+| Errors and range (B) | browser pane | `500000000.01` → ABOVE_MAX, no figures; `abc` → INVALID_CHARS with `aria-invalid` |
+| Breakdown and sources (B) | browser pane | 9 legal citations, all linking to the TY 2026 Ordinance PDF |
+| Editing, Reset (B) | browser pane | Edit → "Inputs changed…"; Reset → FY 2026-27, Monthly, empty field, cursor in the field |
+| Keyboard (B) | real keystrokes | `250,000` + Enter → Rs 276,000.00; Tab ×3 + Enter opens the 13 steps |
+| Privacy (B) | browser pane | `fetch` blocked by the CSP; 0 storage items; the page loaded only its HTML, JS, CSS and Netlify's badge script, all from the same origin |
+| Layout (B) | 320 px viewport, both sections open | No horizontal scroll |
+
+**Finding: Netlify's injected badge script.** Netlify adds an HTML comment and `<script async src="/.netlify/scripts/hud?variant=public">` to every page at its edge; the script is the "Powered by Netlify" badge. Because the CSP has no `'unsafe-inline'`, its inline style and inline script are blocked, which produces 4 CSP errors in the console. The badge iframe it creates was removed again, and no extra network request was made. Netlify's docs (https://docs.netlify.com/manage/projects/powered-by-netlify-badge/) state the badge makes no network requests and can be turned off under **Project configuration → General → Powered by Netlify badge**. App behaviour is unaffected. Turning the badge off is the owner's choice in the Netlify dashboard.
+
+**Not verified on the live site:** browsers other than Claude's embedded Chromium; a physical phone; screen-reader output. The local equivalents were checked by the reviewer earlier.
+
