@@ -133,7 +133,7 @@ Steps 2–7 cite First Schedule Part I Division I clause (2) and the year's Fina
 ## 8. Project structure (as built)
 
 ```
-pakistan-salary-tax-calculator/
+muhammadahmad-khan-pk-salary-tax-calculator/
   README.md, package.json, package-lock.json, index.html, vite.config.js, .nvmrc, .gitignore
   src/
     main.jsx, App.jsx     entry point and page shell (state via useReducer)

@@ -7,7 +7,7 @@ A single-page calculator for **salaried individuals in Pakistan**. You enter you
 
 It covers **FY 2025-26 (Tax Year 2026)** and **FY 2026-27 (Tax Year 2027)** and runs entirely in your browser.
 
-**Live site:** https://pk-salary-tax-calculator.netlify.app · **Source:** https://github.com/codexub/Pakistan-Salary-Tax-Calculator
+**Live site:** https://pk-salary-tax-calculator.netlify.app · **Source:** https://github.com/codexub/muhammadahmad-khan-pk-salary-tax-calculator
 
 **Who it serves:** a salaried employee planning a budget or comparing a salary offer who wants to know what they actually keep after income tax, and why.
 
@@ -101,8 +101,8 @@ This is an estimate, not tax advice.
 ## Install, run, test, build
 
 ```bash
-git clone https://github.com/codexub/Pakistan-Salary-Tax-Calculator.git
-cd Pakistan-Salary-Tax-Calculator
+git clone https://github.com/codexub/muhammadahmad-khan-pk-salary-tax-calculator.git
+cd muhammadahmad-khan-pk-salary-tax-calculator
 nvm install          # first time only: installs Node 24.21.0 from .nvmrc
 nvm use              # run in every new terminal before npm commands
 npm ci               # exact install from package-lock.json
@@ -125,7 +125,7 @@ npm 11 may print an `install-scripts` warning about `fsevents`, an optional macO
 ## Repository layout
 
 ```
-pakistan-salary-tax-calculator/
+muhammadahmad-khan-pk-salary-tax-calculator/
 ├── README.md, package.json, package-lock.json, index.html, vite.config.js, .nvmrc, .gitignore
 ├── src/
 │   ├── main.jsx, App.jsx        entry point and page shell

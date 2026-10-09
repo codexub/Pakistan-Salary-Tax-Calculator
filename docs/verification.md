@@ -80,7 +80,7 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 
 ### Public repository verification
 
-**Repository:** https://github.com/codexub/Pakistan-Salary-Tax-Calculator. The owner created it on github.com, and the owner's own credentials were used for `git push -u origin main`.
+**Repository:** https://github.com/codexub/muhammadahmad-khan-pk-salary-tax-calculator (originally created as `Pakistan-Salary-Tax-Calculator`; renamed by the owner to match the assignment's `firstname-lastname-calculator` naming, and GitHub redirects the old URL). The owner created it on github.com, and the owner's own credentials were used for `git push -u origin main`.
 
 | Check | Result |
 |---|---|
