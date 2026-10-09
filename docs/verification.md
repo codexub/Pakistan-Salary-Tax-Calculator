@@ -115,3 +115,13 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 
 **Not verified on the live site:** browsers other than Claude's embedded Chromium; a physical phone; screen-reader output. The local equivalents were checked by the reviewer earlier.
 
+### App renamed to "Calculator" (2026-10-09)
+
+The app was renamed from "Pakistan Salary Tax Estimator" to **"Pakistan Salary Tax Calculator"** (page title, heading, README and package description). Earlier entries in this file record the title as it was when they were checked.
+
+| Check | Result |
+|---|---|
+| Tests and build | 358/358 passed; built `dist/index.html` title "Pakistan Salary Tax Calculator" |
+| Netlify continuous deploy from the renamed repository | Pushed commit `fac73c9`; within about 20 s the live title changed to "Pakistan Salary Tax Calculator", so Netlify deploys from `codexub/muhammadahmad-khan-pk-salary-tax-calculator` |
+| Live build identity | Live JS `index-Big4TKtp.js` matches the local build; it contains the new heading and no "Estimator"; the CSP header (`connect-src 'none'`) is still served |
+
