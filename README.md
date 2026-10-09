@@ -135,7 +135,7 @@ pakistan-salary-tax-calculator/
 └── docs/                        product documents, verification record, transcripts/
 ```
 
-`docs/transcripts/` holds the native exports of the AI sessions, in their original formats, as added by me. No summaries are presented as transcripts.
+`docs/transcripts/` contains [`session-transcripts.md`](docs/transcripts/session-transcripts.md). It is a readable Markdown conversion of this project's Claude Code session, made by a script from the session's native `.jsonl` export, and it is not a summary. It covers 2026-10-08 22:16 UTC to 2026-10-09 01:38 UTC and includes every user message and Claude's visible replies verbatim, in order, with one-line notes for tool calls. Tool outputs, Claude's internal reasoning and system metadata are omitted. The native `.jsonl` is the complete original record.
 
 ## Deployment
 
@@ -161,6 +161,7 @@ Netlify adds HTTPS, with HSTS and an HTTP→HTTPS redirect. There are no serverl
 | [docs/TEST_PLAN.md](docs/TEST_PLAN.md) | Test design, coverage matrix, results log |
 | [docs/manual-test-checklist.md](docs/manual-test-checklist.md) | Manual checks with expected values |
 | [docs/verification.md](docs/verification.md) | Evidence for each story; failed and untested items |
+| [docs/transcripts/session-transcripts.md](docs/transcripts/session-transcripts.md) | AI session transcript (Markdown conversion of the native export) |
 
 **Status (audit 2026-10-09):** all **14 stories** and all **5 technical criteria** are **Implemented**. One criterion, US-09-AC1 (the breakdown's legal citations must link to the FBR documents), failed in the audit; it was fixed, tested, and then re-checked by me in Safari, Chrome and Firefox. Evidence is in [docs/verification.md](docs/verification.md).
 

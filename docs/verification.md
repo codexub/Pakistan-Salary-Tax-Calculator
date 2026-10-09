@@ -76,7 +76,7 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 **Not completed by Claude:**
 - **Clean-copy check in a browser:** the clean copy was checked over HTTP only. Interactive browser checks were done on the working copy before the file reorganisation; the reorganisation changed only file locations, and the same 358 tests pass.
 - **Offline install/build:** not attempted, because a clean install needs the npm registry and Claude had no network-isolated environment. The reviewer reports an offline run passed earlier.
-- **`docs/transcripts/`:** contains only `.gitkeep`. The owner will add the native exports of every AI session; Claude has not created or summarised any transcript.
+- **`docs/transcripts/`:** later filled with `session-transcripts.md`, a script-made, verbatim Markdown conversion of the session's native `.jsonl`, cut off at 2026-10-09 01:38:51 UTC at the owner's request. It is not a summary. The native `.jsonl` itself is not in the repository.
 
 ### Public repository verification
 
@@ -85,7 +85,7 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 | Check | Result |
 |---|---|
 | Visibility | **Public**: an anonymous clone with no credentials succeeded, and the GitHub page shows "Public" |
-| Contents | `main` = `cecd5a0` on GitHub and locally; identical tree hash; 45 files; no `node_modules`, `dist` or `.claude`; `docs/transcripts/` contains only `.gitkeep` |
+| Contents | `main` = `cecd5a0` on GitHub and locally; identical tree hash; 45 files; no `node_modules`, `dist` or `.claude`; `docs/transcripts/` contained only `.gitkeep` at that time |
 | Fresh anonymous clone | `nvm use` → Node v24.21.0 / npm 11.19.0; `npm ci` 91 packages, 0 vulnerabilities; `npm test` **358 passed**; `npm run build` succeeds |
 | GitHub page | README renders as the repository's front page |
 
