@@ -1,0 +1,7784 @@
+{
+ "generator": "python3 -I tools/reference_values.py --json",
+ "law": "docs/tax-rules.md (verified 2026-10-09)",
+ "independence": "Computed with Python fractions from the verified rule tables in this script; never from the application's code.",
+ "moneyFormat": "exact = reduced rupees 'n/d'; display = 2 dp half up, international grouping, no 'Rs'; approx = display differs from exact (UI prefixes ≈)",
+ "cases": [
+  {
+   "id": "EX-26-01",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "0",
+   "annual": {
+    "exact": "0/1",
+    "display": "0.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-02",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "0",
+   "annual": {
+    "exact": "0/1",
+    "display": "0.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-03",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "0.01",
+   "annual": {
+    "exact": "1/100",
+    "display": "0.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1/1200",
+     "display": "0.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-04",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "1",
+   "annual": {
+    "exact": "1/1",
+    "display": "1.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1/12",
+     "display": "0.08",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-05",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "0.01",
+   "annual": {
+    "exact": "3/25",
+    "display": "0.12",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "3/25",
+     "display": "0.12",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "3/25",
+     "display": "0.12",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-06",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "600001",
+   "annual": {
+    "exact": "600001/1",
+    "display": "600,001.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "600001/1",
+     "display": "600,001.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "600001/12",
+     "display": "50,000.08",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-07",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "600049.99",
+   "annual": {
+    "exact": "60004999/100",
+    "display": "600,049.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "4999/100",
+     "display": "49.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "4999/10000",
+     "display": "0.50",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "4999/10000",
+     "display": "0.50",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "4999/10000",
+     "display": "0.50",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "60004999/100",
+     "display": "600,049.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "60004999/1200",
+     "display": "50,004.17",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-08",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "600050",
+   "annual": {
+    "exact": "600050/1",
+    "display": "600,050.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "50/1",
+     "display": "50.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/2",
+     "display": "0.50",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1/2",
+     "display": "0.50",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/2",
+     "display": "0.50",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "1/12",
+     "display": "0.08",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "600049/1",
+     "display": "600,049.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "600049/12",
+     "display": "50,004.08",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-09",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "600100",
+   "annual": {
+    "exact": "600100/1",
+    "display": "600,100.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "100/1",
+     "display": "100.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "1/12",
+     "display": "0.08",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "600099/1",
+     "display": "600,099.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "200033/4",
+     "display": "50,008.25",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-10",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "50000.01",
+   "annual": {
+    "exact": "15000003/25",
+    "display": "600,000.12",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "3/25",
+     "display": "0.12",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "3/2500",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "3/2500",
+     "display": "0.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "3/2500",
+     "display": "0.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "15000003/25",
+     "display": "600,000.12",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "5000001/100",
+     "display": "50,000.01",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-11",
+   "group": "Zero and small values",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "650000",
+   "annual": {
+    "exact": "650000/1",
+    "display": "650,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "50000/1",
+     "display": "50,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "125/3",
+     "display": "41.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "649500/1",
+     "display": "649,500.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "54125/1",
+     "display": "54,125.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-12",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "600000",
+   "annual": {
+    "exact": "600000/1",
+    "display": "600,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "50000/1",
+     "display": "50,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-13",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "600000.01",
+   "annual": {
+    "exact": "60000001/100",
+    "display": "600,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "60000001/100",
+     "display": "600,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "60000001/1200",
+     "display": "50,000.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-14",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "1200000",
+   "annual": {
+    "exact": "1200000/1",
+    "display": "1,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1194000/1",
+     "display": "1,194,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "99500/1",
+     "display": "99,500.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-15",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "1200000.01",
+   "annual": {
+    "exact": "120000001/100",
+    "display": "1,200,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "11/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "60000011/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "60000011/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "119400001/100",
+     "display": "1,194,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "119400001/1200",
+     "display": "99,500.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-16",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "2200000",
+   "annual": {
+    "exact": "2200000/1",
+    "display": "2,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1000000/1",
+     "display": "1,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "110000/1",
+     "display": "110,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "29000/3",
+     "display": "9,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "2084000/1",
+     "display": "2,084,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "521000/3",
+     "display": "173,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-17",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "2200000.01",
+   "annual": {
+    "exact": "220000001/100",
+    "display": "2,200,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 23,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "23/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1160000023/10000",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1160000023/10000",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "29000/3",
+     "display": "9,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "208400001/100",
+     "display": "2,084,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "69466667/400",
+     "display": "173,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-18",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "3200000",
+   "annual": {
+    "exact": "3200000/1",
+    "display": "3,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 23,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1000000/1",
+     "display": "1,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "230000/1",
+     "display": "230,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "86500/3",
+     "display": "28,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "2854000/1",
+     "display": "2,854,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "713500/3",
+     "display": "237,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-19",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "3200000.01",
+   "annual": {
+    "exact": "320000001/100",
+    "display": "3,200,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 30,
+    "baseTax": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "3/1000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "346000003/1000",
+     "display": "346,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "346000003/1000",
+     "display": "346,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "86500/3",
+     "display": "28,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "285400001/100",
+     "display": "2,854,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "285400001/1200",
+     "display": "237,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-20",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "4100000",
+   "annual": {
+    "exact": "4100000/1",
+    "display": "4,100,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 30,
+    "baseTax": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "900000/1",
+     "display": "900,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "270000/1",
+     "display": "270,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "154000/3",
+     "display": "51,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "3484000/1",
+     "display": "3,484,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "871000/3",
+     "display": "290,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-21",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "4100000.01",
+   "annual": {
+    "exact": "410000001/100",
+    "display": "4,100,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "7/2000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1232000007/2000",
+     "display": "616,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1232000007/2000",
+     "display": "616,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "154000/3",
+     "display": "51,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "348400001/100",
+     "display": "3,484,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "348400001/1200",
+     "display": "290,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-22",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "50000",
+   "annual": {
+    "exact": "600000/1",
+    "display": "600,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "50000/1",
+     "display": "50,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-23",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "100000",
+   "annual": {
+    "exact": "1200000/1",
+    "display": "1,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1194000/1",
+     "display": "1,194,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "99500/1",
+     "display": "99,500.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-24",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "9999999.99",
+   "annual": {
+    "exact": "999999999/100",
+    "display": "9,999,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "589999999/100",
+     "display": "5,899,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "4129999993/2000",
+     "display": "2,065,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "5361999993/2000",
+     "display": "2,681,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "5361999993/2000",
+     "display": "2,681,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2681000/1",
+     "display": "2,681,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "670250/3",
+     "display": "223,416.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "731899999/100",
+     "display": "7,318,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "731899999/1200",
+     "display": "609,916.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-25",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "10000000",
+   "annual": {
+    "exact": "10000000/1",
+    "display": "10,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "5900000/1",
+     "display": "5,900,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2065000/1",
+     "display": "2,065,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "2681000/1",
+     "display": "2,681,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "2681000/1",
+     "display": "2,681,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "2681000/1",
+     "display": "2,681,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "670250/3",
+     "display": "223,416.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "7319000/1",
+     "display": "7,319,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1829750/3",
+     "display": "609,916.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-26",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "10000000.01",
+   "annual": {
+    "exact": "1000000001/100",
+    "display": "10,000,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "590000001/100",
+     "display": "5,900,000.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "4130000007/2000",
+     "display": "2,065,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "5362000007/2000",
+     "display": "2,681,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "48258000063/200000",
+     "display": "241,290.00",
+     "approx": true
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "584458000763/200000",
+     "display": "2,922,290.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2922290/1",
+     "display": "2,922,290.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "1461145/6",
+     "display": "243,524.17",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "707771001/100",
+     "display": "7,077,710.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "235923667/400",
+     "display": "589,809.17",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-27",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "833333.33",
+   "annual": {
+    "exact": "249999999/25",
+    "display": "9,999,999.96",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "147499999/25",
+     "display": "5,899,999.96",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1032499993/500",
+     "display": "2,064,999.99",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1340499993/500",
+     "display": "2,680,999.99",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1340499993/500",
+     "display": "2,680,999.99",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2681000/1",
+     "display": "2,681,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "670250/3",
+     "display": "223,416.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "182974999/25",
+     "display": "7,318,999.96",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "182974999/300",
+     "display": "609,916.66",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-28",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "833333.34",
+   "annual": {
+    "exact": "250000002/25",
+    "display": "10,000,000.08",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "147500002/25",
+     "display": "5,900,000.08",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "516250007/250",
+     "display": "2,065,000.03",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "670250007/250",
+     "display": "2,681,000.03",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "6032250063/25000",
+     "display": "241,290.00",
+     "approx": true
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "73057250763/25000",
+     "display": "2,922,290.03",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2922290/1",
+     "display": "2,922,290.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "1461145/6",
+     "display": "243,524.17",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "176942752/25",
+     "display": "7,077,710.08",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "44235688/75",
+     "display": "589,809.17",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-29",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "149999999.99",
+   "annual": {
+    "exact": "14999999999/100",
+    "display": "149,999,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "14589999999/100",
+     "display": "145,899,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "102129999993/2000",
+     "display": "51,065,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "103361999993/2000",
+     "display": "51,681,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "930257999937/200000",
+     "display": "4,651,290.00",
+     "approx": true
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "11266457999237/200000",
+     "display": "56,332,290.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "56332290/1",
+     "display": "56,332,290.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "9388715/2",
+     "display": "4,694,357.50",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "9366770999/100",
+     "display": "93,667,709.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "9366770999/1200",
+     "display": "7,805,642.50",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-30",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "150000000",
+   "annual": {
+    "exact": "150000000/1",
+    "display": "150,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "145900000/1",
+     "display": "145,900,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "51065000/1",
+     "display": "51,065,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "51681000/1",
+     "display": "51,681,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "4651290/1",
+     "display": "4,651,290.00",
+     "approx": false
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "56332290/1",
+     "display": "56,332,290.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "56332290/1",
+     "display": "56,332,290.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "9388715/2",
+     "display": "4,694,357.50",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "93667710/1",
+     "display": "93,667,710.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "15611285/2",
+     "display": "7,805,642.50",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-31",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "150000000.01",
+   "annual": {
+    "exact": "15000000001/100",
+    "display": "150,000,000.01",
+    "approx": false
+   },
+   "error": "ABOVE_MAX",
+   "max": {
+    "exact": "150000000/1",
+    "display": "150,000,000.00",
+    "approx": false
+   },
+   "result": null
+  },
+  {
+   "id": "EX-26-32",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "12499999.99",
+   "annual": {
+    "exact": "3749999997/25",
+    "display": "149,999,999.88",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "3647499997/25",
+     "display": "145,899,999.88",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "25532499979/500",
+     "display": "51,064,999.96",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "25840499979/500",
+     "display": "51,680,999.96",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "232564499811/50000",
+     "display": "4,651,290.00",
+     "approx": true
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "2816614497711/50000",
+     "display": "56,332,289.95",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "56332290/1",
+     "display": "56,332,290.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "9388715/2",
+     "display": "4,694,357.50",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "2341692747/25",
+     "display": "93,667,709.88",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "780564249/100",
+     "display": "7,805,642.49",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-33",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "12500000",
+   "annual": {
+    "exact": "150000000/1",
+    "display": "150,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "145900000/1",
+     "display": "145,900,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "51065000/1",
+     "display": "51,065,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "51681000/1",
+     "display": "51,681,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "4651290/1",
+     "display": "4,651,290.00",
+     "approx": false
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "56332290/1",
+     "display": "56,332,290.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "56332290/1",
+     "display": "56,332,290.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "9388715/2",
+     "display": "4,694,357.50",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "93667710/1",
+     "display": "93,667,710.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "15611285/2",
+     "display": "7,805,642.50",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-34",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "12500000.01",
+   "annual": {
+    "exact": "3750000003/25",
+    "display": "150,000,000.12",
+    "approx": false
+   },
+   "error": "ABOVE_MAX",
+   "max": {
+    "exact": "150000000/1",
+    "display": "150,000,000.00",
+    "approx": false
+   },
+   "result": null
+  },
+  {
+   "id": "EX-26-35",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "250000",
+   "annual": {
+    "exact": "3000000/1",
+    "display": "3,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 23,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "800000/1",
+     "display": "800,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "184000/1",
+     "display": "184,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "25000/1",
+     "display": "25,000.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "2700000/1",
+     "display": "2,700,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "225000/1",
+     "display": "225,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-36",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "3000000",
+   "annual": {
+    "exact": "3000000/1",
+    "display": "3,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 23,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "800000/1",
+     "display": "800,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "184000/1",
+     "display": "184,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "25000/1",
+     "display": "25,000.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "2700000/1",
+     "display": "2,700,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "225000/1",
+     "display": "225,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-37",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "1000000",
+   "annual": {
+    "exact": "12000000/1",
+    "display": "12,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "7900000/1",
+     "display": "7,900,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2765000/1",
+     "display": "2,765,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "3381000/1",
+     "display": "3,381,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "304290/1",
+     "display": "304,290.00",
+     "approx": false
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "3685290/1",
+     "display": "3,685,290.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "3685290/1",
+     "display": "3,685,290.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "614215/2",
+     "display": "307,107.50",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "8314710/1",
+     "display": "8,314,710.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1385785/2",
+     "display": "692,892.50",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-38",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "12000000",
+   "annual": {
+    "exact": "12000000/1",
+    "display": "12,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "7900000/1",
+     "display": "7,900,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2765000/1",
+     "display": "2,765,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "3381000/1",
+     "display": "3,381,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "304290/1",
+     "display": "304,290.00",
+     "approx": false
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "3685290/1",
+     "display": "3,685,290.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "3685290/1",
+     "display": "3,685,290.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "614215/2",
+     "display": "307,107.50",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "8314710/1",
+     "display": "8,314,710.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1385785/2",
+     "display": "692,892.50",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-39",
+   "group": "Values cited by stories",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "1000000",
+   "annual": {
+    "exact": "1000000/1",
+    "display": "1,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "400000/1",
+     "display": "400,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "1000/3",
+     "display": "333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "996000/1",
+     "display": "996,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "83000/1",
+     "display": "83,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-40",
+   "group": "Values cited by stories",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "250000",
+   "annual": {
+    "exact": "250000/1",
+    "display": "250,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "250000/1",
+     "display": "250,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "250000/1",
+     "display": "250,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "62500/3",
+     "display": "20,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-41",
+   "group": "Values cited by stories",
+   "taxYear": 2026,
+   "period": "monthly",
+   "input": "1200000",
+   "annual": {
+    "exact": "14400000/1",
+    "display": "14,400,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "10300000/1",
+     "display": "10,300,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "3605000/1",
+     "display": "3,605,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "4221000/1",
+     "display": "4,221,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "379890/1",
+     "display": "379,890.00",
+     "approx": false
+    },
+    "surchargeApplies": true,
+    "taxBeforeRounding": {
+     "exact": "4600890/1",
+     "display": "4,600,890.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "4600890/1",
+     "display": "4,600,890.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "766815/2",
+     "display": "383,407.50",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "9799110/1",
+     "display": "9,799,110.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1633185/2",
+     "display": "816,592.50",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-42",
+   "group": "Values cited by stories",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "5000000.50",
+   "annual": {
+    "exact": "10000001/2",
+    "display": "5,000,000.50",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1800001/2",
+     "display": "900,000.50",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "12600007/40",
+     "display": "315,000.18",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "37240007/40",
+     "display": "931,000.18",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "37240007/40",
+     "display": "931,000.18",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "931000/1",
+     "display": "931,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "232750/3",
+     "display": "77,583.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "8138001/2",
+     "display": "4,069,000.50",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "2712667/8",
+     "display": "339,083.38",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-43",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "300000",
+   "annual": {
+    "exact": "300000/1",
+    "display": "300,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "25000/1",
+     "display": "25,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-44",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "599999.99",
+   "annual": {
+    "exact": "59999999/100",
+    "display": "599,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "59999999/100",
+     "display": "599,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "59999999/100",
+     "display": "599,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "59999999/1200",
+     "display": "50,000.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-45",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "900000",
+   "annual": {
+    "exact": "900000/1",
+    "display": "900,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "250/1",
+     "display": "250.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "897000/1",
+     "display": "897,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "74750/1",
+     "display": "74,750.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-46",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "1199999.99",
+   "annual": {
+    "exact": "119999999/100",
+    "display": "1,199,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "59999999/100",
+     "display": "599,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "59999999/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "59999999/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "59999999/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "119399999/100",
+     "display": "1,193,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "119399999/1200",
+     "display": "99,500.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-47",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "1700000",
+   "annual": {
+    "exact": "1700000/1",
+    "display": "1,700,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "500000/1",
+     "display": "500,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "55000/1",
+     "display": "55,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "61000/1",
+     "display": "61,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "61000/1",
+     "display": "61,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "61000/1",
+     "display": "61,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "15250/3",
+     "display": "5,083.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "1639000/1",
+     "display": "1,639,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "409750/3",
+     "display": "136,583.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-48",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "2199999.99",
+   "annual": {
+    "exact": "219999999/100",
+    "display": "2,199,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "99999999/100",
+     "display": "999,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1099999989/10000",
+     "display": "110,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1159999989/10000",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1159999989/10000",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "29000/3",
+     "display": "9,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "208399999/100",
+     "display": "2,083,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "208399999/1200",
+     "display": "173,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-49",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "2700000",
+   "annual": {
+    "exact": "2700000/1",
+    "display": "2,700,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 23,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "500000/1",
+     "display": "500,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "115000/1",
+     "display": "115,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "231000/1",
+     "display": "231,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "231000/1",
+     "display": "231,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "231000/1",
+     "display": "231,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "19250/1",
+     "display": "19,250.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "2469000/1",
+     "display": "2,469,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "205750/1",
+     "display": "205,750.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-26-50",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "3199999.99",
+   "annual": {
+    "exact": "319999999/100",
+    "display": "3,199,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 23,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "99999999/100",
+     "display": "999,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2299999977/10000",
+     "display": "230,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "3459999977/10000",
+     "display": "346,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "3459999977/10000",
+     "display": "346,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "86500/3",
+     "display": "28,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "285399999/100",
+     "display": "2,853,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "95133333/400",
+     "display": "237,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-51",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "3650000",
+   "annual": {
+    "exact": "3650000/1",
+    "display": "3,650,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 30,
+    "baseTax": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "450000/1",
+     "display": "450,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "135000/1",
+     "display": "135,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "481000/1",
+     "display": "481,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "481000/1",
+     "display": "481,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "481000/1",
+     "display": "481,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "120250/3",
+     "display": "40,083.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "3169000/1",
+     "display": "3,169,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "792250/3",
+     "display": "264,083.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-52",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "4099999.99",
+   "annual": {
+    "exact": "409999999/100",
+    "display": "4,099,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 30,
+    "baseTax": {
+     "exact": "346000/1",
+     "display": "346,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "89999999/100",
+     "display": "899,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "269999997/1000",
+     "display": "270,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "615999997/1000",
+     "display": "616,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "615999997/1000",
+     "display": "616,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "154000/3",
+     "display": "51,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "348399999/100",
+     "display": "3,483,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "116133333/400",
+     "display": "290,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-26-53",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2026,
+   "period": "annual",
+   "input": "4600000",
+   "annual": {
+    "exact": "4600000/1",
+    "display": "4,600,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "616000/1",
+     "display": "616,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "500000/1",
+     "display": "500,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "175000/1",
+     "display": "175,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "791000/1",
+     "display": "791,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "791000/1",
+     "display": "791,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "791000/1",
+     "display": "791,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "197750/3",
+     "display": "65,916.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "3809000/1",
+     "display": "3,809,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "952250/3",
+     "display": "317,416.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-01",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "0",
+   "annual": {
+    "exact": "0/1",
+    "display": "0.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-02",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "0",
+   "annual": {
+    "exact": "0/1",
+    "display": "0.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-03",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "0.01",
+   "annual": {
+    "exact": "1/100",
+    "display": "0.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1/1200",
+     "display": "0.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-04",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "1",
+   "annual": {
+    "exact": "1/1",
+    "display": "1.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1/12",
+     "display": "0.08",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-05",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "0.01",
+   "annual": {
+    "exact": "3/25",
+    "display": "0.12",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "3/25",
+     "display": "0.12",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "3/25",
+     "display": "0.12",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-06",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "600001",
+   "annual": {
+    "exact": "600001/1",
+    "display": "600,001.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "600001/1",
+     "display": "600,001.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "600001/12",
+     "display": "50,000.08",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-07",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "600049.99",
+   "annual": {
+    "exact": "60004999/100",
+    "display": "600,049.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "4999/100",
+     "display": "49.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "4999/10000",
+     "display": "0.50",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "4999/10000",
+     "display": "0.50",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "4999/10000",
+     "display": "0.50",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "60004999/100",
+     "display": "600,049.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "60004999/1200",
+     "display": "50,004.17",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-08",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "600050",
+   "annual": {
+    "exact": "600050/1",
+    "display": "600,050.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "50/1",
+     "display": "50.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/2",
+     "display": "0.50",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1/2",
+     "display": "0.50",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/2",
+     "display": "0.50",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "1/12",
+     "display": "0.08",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "600049/1",
+     "display": "600,049.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "600049/12",
+     "display": "50,004.08",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-09",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "600100",
+   "annual": {
+    "exact": "600100/1",
+    "display": "600,100.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "100/1",
+     "display": "100.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "1/1",
+     "display": "1.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "1/12",
+     "display": "0.08",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "600099/1",
+     "display": "600,099.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "200033/4",
+     "display": "50,008.25",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-10",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "50000.01",
+   "annual": {
+    "exact": "15000003/25",
+    "display": "600,000.12",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "3/25",
+     "display": "0.12",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "3/2500",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "3/2500",
+     "display": "0.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "3/2500",
+     "display": "0.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "15000003/25",
+     "display": "600,000.12",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "5000001/100",
+     "display": "50,000.01",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-11",
+   "group": "Zero and small values",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "650000",
+   "annual": {
+    "exact": "650000/1",
+    "display": "650,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "50000/1",
+     "display": "50,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "125/3",
+     "display": "41.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "649500/1",
+     "display": "649,500.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "54125/1",
+     "display": "54,125.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-12",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "600000",
+   "annual": {
+    "exact": "600000/1",
+    "display": "600,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "50000/1",
+     "display": "50,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-13",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "600000.01",
+   "annual": {
+    "exact": "60000001/100",
+    "display": "600,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "60000001/100",
+     "display": "600,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "60000001/1200",
+     "display": "50,000.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-14",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "1200000",
+   "annual": {
+    "exact": "1200000/1",
+    "display": "1,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1194000/1",
+     "display": "1,194,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "99500/1",
+     "display": "99,500.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-15",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "1200000.01",
+   "annual": {
+    "exact": "120000001/100",
+    "display": "1,200,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "11/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "60000011/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "60000011/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "119400001/100",
+     "display": "1,194,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "119400001/1200",
+     "display": "99,500.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-16",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "2200000",
+   "annual": {
+    "exact": "2200000/1",
+    "display": "2,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1000000/1",
+     "display": "1,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "110000/1",
+     "display": "110,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "29000/3",
+     "display": "9,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "2084000/1",
+     "display": "2,084,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "521000/3",
+     "display": "173,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-17",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "2200000.01",
+   "annual": {
+    "exact": "220000001/100",
+    "display": "2,200,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 20,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/500",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "58000001/500",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "58000001/500",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "29000/3",
+     "display": "9,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "208400001/100",
+     "display": "2,084,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "69466667/400",
+     "display": "173,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-18",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "3200000",
+   "annual": {
+    "exact": "3200000/1",
+    "display": "3,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 20,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1000000/1",
+     "display": "1,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "200000/1",
+     "display": "200,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "79000/3",
+     "display": "26,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "2884000/1",
+     "display": "2,884,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "721000/3",
+     "display": "240,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-19",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "3200000.01",
+   "annual": {
+    "exact": "320000001/100",
+    "display": "3,200,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 25,
+    "baseTax": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1/400",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "126400001/400",
+     "display": "316,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "126400001/400",
+     "display": "316,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "79000/3",
+     "display": "26,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "288400001/100",
+     "display": "2,884,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "288400001/1200",
+     "display": "240,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-20",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "4100000",
+   "annual": {
+    "exact": "4100000/1",
+    "display": "4,100,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 25,
+    "baseTax": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "900000/1",
+     "display": "900,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "225000/1",
+     "display": "225,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "135250/3",
+     "display": "45,083.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "3559000/1",
+     "display": "3,559,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "889750/3",
+     "display": "296,583.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-21",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "4100000.01",
+   "annual": {
+    "exact": "410000001/100",
+    "display": "4,100,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 29,
+    "baseTax": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "29/10000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "5410000029/10000",
+     "display": "541,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "5410000029/10000",
+     "display": "541,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "135250/3",
+     "display": "45,083.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "355900001/100",
+     "display": "3,559,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "355900001/1200",
+     "display": "296,583.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-22",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "5600000",
+   "annual": {
+    "exact": "5600000/1",
+    "display": "5,600,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 29,
+    "baseTax": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1500000/1",
+     "display": "1,500,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "435000/1",
+     "display": "435,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "244000/3",
+     "display": "81,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "4624000/1",
+     "display": "4,624,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1156000/3",
+     "display": "385,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-23",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "5600000.01",
+   "annual": {
+    "exact": "560000001/100",
+    "display": "5,600,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 7,
+    "threshold": 5600000,
+    "ratePercent": 32,
+    "baseTax": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2/625",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "610000002/625",
+     "display": "976,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "610000002/625",
+     "display": "976,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "244000/3",
+     "display": "81,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "462400001/100",
+     "display": "4,624,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "462400001/1200",
+     "display": "385,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-24",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "7000000",
+   "annual": {
+    "exact": "7000000/1",
+    "display": "7,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 7,
+    "threshold": 5600000,
+    "ratePercent": 32,
+    "baseTax": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1400000/1",
+     "display": "1,400,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "448000/1",
+     "display": "448,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "356000/3",
+     "display": "118,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "5576000/1",
+     "display": "5,576,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1394000/3",
+     "display": "464,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-25",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "7000000.01",
+   "annual": {
+    "exact": "700000001/100",
+    "display": "7,000,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1/100",
+     "display": "0.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "7/2000",
+     "display": "0.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "2848000007/2000",
+     "display": "1,424,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "2848000007/2000",
+     "display": "1,424,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "356000/3",
+     "display": "118,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "557600001/100",
+     "display": "5,576,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "185866667/400",
+     "display": "464,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-26",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "50000",
+   "annual": {
+    "exact": "600000/1",
+    "display": "600,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "50000/1",
+     "display": "50,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-27",
+   "group": "Every band boundary (at the limit, and 0.01 above)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "100000",
+   "annual": {
+    "exact": "1200000/1",
+    "display": "1,200,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "600000/1",
+     "display": "600,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "1194000/1",
+     "display": "1,194,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "99500/1",
+     "display": "99,500.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-28",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "9999999.99",
+   "annual": {
+    "exact": "999999999/100",
+    "display": "9,999,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "299999999/100",
+     "display": "2,999,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2099999993/2000",
+     "display": "1,050,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "4947999993/2000",
+     "display": "2,474,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "4947999993/2000",
+     "display": "2,474,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2474000/1",
+     "display": "2,474,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "618500/3",
+     "display": "206,166.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "752599999/100",
+     "display": "7,525,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "752599999/1200",
+     "display": "627,166.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-29",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "10000000",
+   "annual": {
+    "exact": "10000000/1",
+    "display": "10,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "3000000/1",
+     "display": "3,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1050000/1",
+     "display": "1,050,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "2474000/1",
+     "display": "2,474,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "2474000/1",
+     "display": "2,474,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "2474000/1",
+     "display": "2,474,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "618500/3",
+     "display": "206,166.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "7526000/1",
+     "display": "7,526,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1881500/3",
+     "display": "627,166.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-30",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "10000000.01",
+   "annual": {
+    "exact": "1000000001/100",
+    "display": "10,000,000.01",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "300000001/100",
+     "display": "3,000,000.01",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2100000007/2000",
+     "display": "1,050,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "4948000007/2000",
+     "display": "2,474,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "4948000007/2000",
+     "display": "2,474,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2474000/1",
+     "display": "2,474,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "618500/3",
+     "display": "206,166.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "752600001/100",
+     "display": "7,526,000.01",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "250866667/400",
+     "display": "627,166.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-31",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "833333.33",
+   "annual": {
+    "exact": "249999999/25",
+    "display": "9,999,999.96",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "74999999/25",
+     "display": "2,999,999.96",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "524999993/500",
+     "display": "1,049,999.99",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1236999993/500",
+     "display": "2,473,999.99",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1236999993/500",
+     "display": "2,473,999.99",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2474000/1",
+     "display": "2,474,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "618500/3",
+     "display": "206,166.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "188149999/25",
+     "display": "7,525,999.96",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "188149999/300",
+     "display": "627,166.66",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-32",
+   "group": "Surcharge boundary (Rs 10,000,000)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "833333.34",
+   "annual": {
+    "exact": "250000002/25",
+    "display": "10,000,000.08",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "75000002/25",
+     "display": "3,000,000.08",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "262500007/250",
+     "display": "1,050,000.03",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "618500007/250",
+     "display": "2,474,000.03",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "618500007/250",
+     "display": "2,474,000.03",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "2474000/1",
+     "display": "2,474,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "618500/3",
+     "display": "206,166.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "188150002/25",
+     "display": "7,526,000.08",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "94075001/150",
+     "display": "627,166.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-33",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "499999999.99",
+   "annual": {
+    "exact": "49999999999/100",
+    "display": "499,999,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "49299999999/100",
+     "display": "492,999,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "345099999993/2000",
+     "display": "172,550,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "347947999993/2000",
+     "display": "173,974,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "347947999993/2000",
+     "display": "173,974,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "173974000/1",
+     "display": "173,974,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "43493500/3",
+     "display": "14,497,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "32602599999/100",
+     "display": "326,025,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "10867533333/400",
+     "display": "27,168,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-34",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "500000000",
+   "annual": {
+    "exact": "500000000/1",
+    "display": "500,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "493000000/1",
+     "display": "493,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "172550000/1",
+     "display": "172,550,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "173974000/1",
+     "display": "173,974,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "173974000/1",
+     "display": "173,974,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "173974000/1",
+     "display": "173,974,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "43493500/3",
+     "display": "14,497,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "326026000/1",
+     "display": "326,026,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "81506500/3",
+     "display": "27,168,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-35",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "500000000.01",
+   "annual": {
+    "exact": "50000000001/100",
+    "display": "500,000,000.01",
+    "approx": false
+   },
+   "error": "ABOVE_MAX",
+   "max": {
+    "exact": "500000000/1",
+    "display": "500,000,000.00",
+    "approx": false
+   },
+   "result": null
+  },
+  {
+   "id": "EX-27-36",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "41666666.65",
+   "annual": {
+    "exact": "2499999999/5",
+    "display": "499,999,999.80",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "2464999999/5",
+     "display": "492,999,999.80",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "17254999993/100",
+     "display": "172,549,999.93",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "17397399993/100",
+     "display": "173,973,999.93",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "17397399993/100",
+     "display": "173,973,999.93",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "173974000/1",
+     "display": "173,974,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "43493500/3",
+     "display": "14,497,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "1630129999/5",
+     "display": "326,025,999.80",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1630129999/60",
+     "display": "27,168,833.32",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-37",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "41666666.66",
+   "annual": {
+    "exact": "12499999998/25",
+    "display": "499,999,999.92",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "12324999998/25",
+     "display": "492,999,999.92",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "43137499993/250",
+     "display": "172,549,999.97",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "43493499993/250",
+     "display": "173,973,999.97",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "43493499993/250",
+     "display": "173,973,999.97",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "173974000/1",
+     "display": "173,974,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "43493500/3",
+     "display": "14,497,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "8150649998/25",
+     "display": "326,025,999.92",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "4075324999/150",
+     "display": "27,168,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-38",
+   "group": "Supported maximum (below, at, above)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "41666666.67",
+   "annual": {
+    "exact": "12500000001/25",
+    "display": "500,000,000.04",
+    "approx": false
+   },
+   "error": "ABOVE_MAX",
+   "max": {
+    "exact": "500000000/1",
+    "display": "500,000,000.00",
+    "approx": false
+   },
+   "result": null
+  },
+  {
+   "id": "EX-27-39",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "250000",
+   "annual": {
+    "exact": "3000000/1",
+    "display": "3,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 20,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "800000/1",
+     "display": "800,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "160000/1",
+     "display": "160,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "276000/1",
+     "display": "276,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "276000/1",
+     "display": "276,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "276000/1",
+     "display": "276,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "23000/1",
+     "display": "23,000.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "2724000/1",
+     "display": "2,724,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "227000/1",
+     "display": "227,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-40",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "3000000",
+   "annual": {
+    "exact": "3000000/1",
+    "display": "3,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 20,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "800000/1",
+     "display": "800,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "160000/1",
+     "display": "160,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "276000/1",
+     "display": "276,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "276000/1",
+     "display": "276,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "276000/1",
+     "display": "276,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "23000/1",
+     "display": "23,000.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "2724000/1",
+     "display": "2,724,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "227000/1",
+     "display": "227,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-41",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "1000000",
+   "annual": {
+    "exact": "12000000/1",
+    "display": "12,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "5000000/1",
+     "display": "5,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1750000/1",
+     "display": "1,750,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "3174000/1",
+     "display": "3,174,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "3174000/1",
+     "display": "3,174,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "3174000/1",
+     "display": "3,174,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "264500/1",
+     "display": "264,500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "8826000/1",
+     "display": "8,826,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "735500/1",
+     "display": "735,500.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-42",
+   "group": "Typical salaries (monthly and annual equivalents)",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "12000000",
+   "annual": {
+    "exact": "12000000/1",
+    "display": "12,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "5000000/1",
+     "display": "5,000,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1750000/1",
+     "display": "1,750,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "3174000/1",
+     "display": "3,174,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "3174000/1",
+     "display": "3,174,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "3174000/1",
+     "display": "3,174,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "264500/1",
+     "display": "264,500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "8826000/1",
+     "display": "8,826,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "735500/1",
+     "display": "735,500.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-43",
+   "group": "Values cited by stories",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "1000000",
+   "annual": {
+    "exact": "1000000/1",
+    "display": "1,000,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "400000/1",
+     "display": "400,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "4000/1",
+     "display": "4,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "1000/3",
+     "display": "333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "996000/1",
+     "display": "996,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "83000/1",
+     "display": "83,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-44",
+   "group": "Values cited by stories",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "250000",
+   "annual": {
+    "exact": "250000/1",
+    "display": "250,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "250000/1",
+     "display": "250,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "250000/1",
+     "display": "250,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "62500/3",
+     "display": "20,833.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-45",
+   "group": "Values cited by stories",
+   "taxYear": 2027,
+   "period": "monthly",
+   "input": "1200000",
+   "annual": {
+    "exact": "14400000/1",
+    "display": "14,400,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "7400000/1",
+     "display": "7,400,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "2590000/1",
+     "display": "2,590,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "4014000/1",
+     "display": "4,014,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "4014000/1",
+     "display": "4,014,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "4014000/1",
+     "display": "4,014,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "334500/1",
+     "display": "334,500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "10386000/1",
+     "display": "10,386,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "865500/1",
+     "display": "865,500.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-46",
+   "group": "Values cited by stories",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "5000000.50",
+   "annual": {
+    "exact": "10000001/2",
+    "display": "5,000,000.50",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 29,
+    "baseTax": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "1800001/2",
+     "display": "900,000.50",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "52200029/200",
+     "display": "261,000.15",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "160400029/200",
+     "display": "802,000.15",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "160400029/200",
+     "display": "802,000.15",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "802000/1",
+     "display": "802,000.00",
+     "approx": false
+    },
+    "s219": "dropped",
+    "avgMonthlyTax": {
+     "exact": "200500/3",
+     "display": "66,833.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "8396001/2",
+     "display": "4,198,000.50",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "2798667/8",
+     "display": "349,833.38",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-47",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "300000",
+   "annual": {
+    "exact": "300000/1",
+    "display": "300,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "25000/1",
+     "display": "25,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-48",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "599999.99",
+   "annual": {
+    "exact": "59999999/100",
+    "display": "599,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 1,
+    "threshold": 0,
+    "ratePercent": 0,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "59999999/100",
+     "display": "599,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "59999999/100",
+     "display": "599,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "59999999/1200",
+     "display": "50,000.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-49",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "900000",
+   "annual": {
+    "exact": "900000/1",
+    "display": "900,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "300000/1",
+     "display": "300,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "3000/1",
+     "display": "3,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "250/1",
+     "display": "250.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "897000/1",
+     "display": "897,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "74750/1",
+     "display": "74,750.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-50",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "1199999.99",
+   "annual": {
+    "exact": "119999999/100",
+    "display": "1,199,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 2,
+    "threshold": 600000,
+    "ratePercent": 1,
+    "baseTax": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "59999999/100",
+     "display": "599,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "59999999/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "59999999/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "59999999/10000",
+     "display": "6,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "500/1",
+     "display": "500.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "119399999/100",
+     "display": "1,193,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "119399999/1200",
+     "display": "99,500.00",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-51",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "1700000",
+   "annual": {
+    "exact": "1700000/1",
+    "display": "1,700,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "500000/1",
+     "display": "500,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "55000/1",
+     "display": "55,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "61000/1",
+     "display": "61,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "61000/1",
+     "display": "61,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "61000/1",
+     "display": "61,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "15250/3",
+     "display": "5,083.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "1639000/1",
+     "display": "1,639,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "409750/3",
+     "display": "136,583.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-52",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "2199999.99",
+   "annual": {
+    "exact": "219999999/100",
+    "display": "2,199,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 3,
+    "threshold": 1200000,
+    "ratePercent": 11,
+    "baseTax": {
+     "exact": "6000/1",
+     "display": "6,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "99999999/100",
+     "display": "999,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "1099999989/10000",
+     "display": "110,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "1159999989/10000",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1159999989/10000",
+     "display": "116,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "29000/3",
+     "display": "9,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "208399999/100",
+     "display": "2,083,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "208399999/1200",
+     "display": "173,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-53",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "2700000",
+   "annual": {
+    "exact": "2700000/1",
+    "display": "2,700,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 20,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "500000/1",
+     "display": "500,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "100000/1",
+     "display": "100,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "216000/1",
+     "display": "216,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "216000/1",
+     "display": "216,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "216000/1",
+     "display": "216,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "18000/1",
+     "display": "18,000.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "2484000/1",
+     "display": "2,484,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "207000/1",
+     "display": "207,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-54",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "3199999.99",
+   "annual": {
+    "exact": "319999999/100",
+    "display": "3,199,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 4,
+    "threshold": 2200000,
+    "ratePercent": 20,
+    "baseTax": {
+     "exact": "116000/1",
+     "display": "116,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "99999999/100",
+     "display": "999,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "99999999/500",
+     "display": "200,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "157999999/500",
+     "display": "316,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "157999999/500",
+     "display": "316,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "79000/3",
+     "display": "26,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "288399999/100",
+     "display": "2,883,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "96133333/400",
+     "display": "240,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-55",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "3650000",
+   "annual": {
+    "exact": "3650000/1",
+    "display": "3,650,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 25,
+    "baseTax": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "450000/1",
+     "display": "450,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "112500/1",
+     "display": "112,500.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "428500/1",
+     "display": "428,500.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "428500/1",
+     "display": "428,500.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "428500/1",
+     "display": "428,500.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "107125/3",
+     "display": "35,708.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "3221500/1",
+     "display": "3,221,500.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "805375/3",
+     "display": "268,458.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-56",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "4099999.99",
+   "annual": {
+    "exact": "409999999/100",
+    "display": "4,099,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 5,
+    "threshold": 3200000,
+    "ratePercent": 25,
+    "baseTax": {
+     "exact": "316000/1",
+     "display": "316,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "89999999/100",
+     "display": "899,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "89999999/400",
+     "display": "225,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "216399999/400",
+     "display": "541,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "216399999/400",
+     "display": "541,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "135250/3",
+     "display": "45,083.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "355899999/100",
+     "display": "3,558,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "118633333/400",
+     "display": "296,583.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-57",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "4850000",
+   "annual": {
+    "exact": "4850000/1",
+    "display": "4,850,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 29,
+    "baseTax": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "750000/1",
+     "display": "750,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "217500/1",
+     "display": "217,500.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "758500/1",
+     "display": "758,500.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "758500/1",
+     "display": "758,500.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "758500/1",
+     "display": "758,500.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "189625/3",
+     "display": "63,208.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "4091500/1",
+     "display": "4,091,500.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "1022875/3",
+     "display": "340,958.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-58",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "5599999.99",
+   "annual": {
+    "exact": "559999999/100",
+    "display": "5,599,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 6,
+    "threshold": 4100000,
+    "ratePercent": 29,
+    "baseTax": {
+     "exact": "541000/1",
+     "display": "541,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "149999999/100",
+     "display": "1,499,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "4349999971/10000",
+     "display": "435,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "9759999971/10000",
+     "display": "976,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "9759999971/10000",
+     "display": "976,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "244000/3",
+     "display": "81,333.33",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "462399999/100",
+     "display": "4,623,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "154133333/400",
+     "display": "385,333.33",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-59",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "6300000",
+   "annual": {
+    "exact": "6300000/1",
+    "display": "6,300,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 7,
+    "threshold": 5600000,
+    "ratePercent": 32,
+    "baseTax": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "700000/1",
+     "display": "700,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "224000/1",
+     "display": "224,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1200000/1",
+     "display": "1,200,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1200000/1",
+     "display": "1,200,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "1200000/1",
+     "display": "1,200,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "100000/1",
+     "display": "100,000.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "5100000/1",
+     "display": "5,100,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "425000/1",
+     "display": "425,000.00",
+     "approx": false
+    }
+   }
+  },
+  {
+   "id": "EX-27-60",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "6999999.99",
+   "annual": {
+    "exact": "699999999/100",
+    "display": "6,999,999.99",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 7,
+    "threshold": 5600000,
+    "ratePercent": 32,
+    "baseTax": {
+     "exact": "976000/1",
+     "display": "976,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "139999999/100",
+     "display": "1,399,999.99",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "279999998/625",
+     "display": "448,000.00",
+     "approx": true
+    },
+    "divisionITax": {
+     "exact": "889999998/625",
+     "display": "1,424,000.00",
+     "approx": true
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "889999998/625",
+     "display": "1,424,000.00",
+     "approx": true
+    },
+    "taxPayable": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "s219": "rounded up",
+    "avgMonthlyTax": {
+     "exact": "356000/3",
+     "display": "118,666.67",
+     "approx": true
+    },
+    "incomeAfterTax": {
+     "exact": "557599999/100",
+     "display": "5,575,999.99",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "557599999/1200",
+     "display": "464,666.67",
+     "approx": true
+    }
+   }
+  },
+  {
+   "id": "EX-27-61",
+   "group": "Every band: mid-band example and 0.01 below each boundary",
+   "taxYear": 2027,
+   "period": "annual",
+   "input": "7500000",
+   "annual": {
+    "exact": "7500000/1",
+    "display": "7,500,000.00",
+    "approx": false
+   },
+   "error": null,
+   "result": {
+    "slab": 8,
+    "threshold": 7000000,
+    "ratePercent": 35,
+    "baseTax": {
+     "exact": "1424000/1",
+     "display": "1,424,000.00",
+     "approx": false
+    },
+    "excess": {
+     "exact": "500000/1",
+     "display": "500,000.00",
+     "approx": false
+    },
+    "marginalTax": {
+     "exact": "175000/1",
+     "display": "175,000.00",
+     "approx": false
+    },
+    "divisionITax": {
+     "exact": "1599000/1",
+     "display": "1,599,000.00",
+     "approx": false
+    },
+    "surcharge": {
+     "exact": "0/1",
+     "display": "0.00",
+     "approx": false
+    },
+    "surchargeApplies": false,
+    "taxBeforeRounding": {
+     "exact": "1599000/1",
+     "display": "1,599,000.00",
+     "approx": false
+    },
+    "taxPayable": {
+     "exact": "1599000/1",
+     "display": "1,599,000.00",
+     "approx": false
+    },
+    "s219": "exact",
+    "avgMonthlyTax": {
+     "exact": "133250/1",
+     "display": "133,250.00",
+     "approx": false
+    },
+    "incomeAfterTax": {
+     "exact": "5901000/1",
+     "display": "5,901,000.00",
+     "approx": false
+    },
+    "avgMonthlyIncomeAfterTax": {
+     "exact": "491750/1",
+     "display": "491,750.00",
+     "approx": false
+    }
+   }
+  }
+ ]
+}
