@@ -76,6 +76,16 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 **Not completed by Claude:**
 - **Clean-copy check in a browser:** the clean copy was checked over HTTP only. Interactive browser checks were done on the working copy before the file reorganisation; the reorganisation changed only file locations, and the same 358 tests pass.
 - **Offline install/build:** not attempted, because a clean install needs the npm registry and Claude had no network-isolated environment. The reviewer reports an offline run passed earlier.
-- **Publishing to a public GitHub repository:** pending. There is no GitHub CLI or SSH key on this machine, and pushing needs the owner's own GitHub credentials.
 - **`docs/transcripts/`:** contains only `.gitkeep`. The owner will add the native exports of every AI session; Claude has not created or summarised any transcript.
+
+### Public repository verification
+
+**Repository:** https://github.com/codexub/Pakistan-Salary-Tax-Calculator. The owner created it on github.com, and the owner's own credentials were used for `git push -u origin main`.
+
+| Check | Result |
+|---|---|
+| Visibility | **Public**: an anonymous clone with no credentials succeeded, and the GitHub page shows "Public" |
+| Contents | `main` = `cecd5a0` on GitHub and locally; identical tree hash; 45 files; no `node_modules`, `dist` or `.claude`; `docs/transcripts/` contains only `.gitkeep` |
+| Fresh anonymous clone | `nvm use` → Node v24.21.0 / npm 11.19.0; `npm ci` 91 packages, 0 vulnerabilities; `npm test` **358 passed**; `npm run build` succeeds |
+| GitHub page | README renders as the repository's front page |
 
