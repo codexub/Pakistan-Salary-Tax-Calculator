@@ -1,6 +1,6 @@
 # Pakistan Salary Income Tax Calculator — Specification
 
-Status: **pre-implementation**. Approved decisions D1–D4 are incorporated.
+Status: **implemented and deployed** (https://pk-salary-tax-calculator.netlify.app). All 14 stories are Implemented; the evidence is in [verification.md](verification.md). Approved decisions D1–D4 are incorporated.
 
 | Document | Role |
 |---|---|

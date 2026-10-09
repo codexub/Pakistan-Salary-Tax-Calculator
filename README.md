@@ -101,11 +101,14 @@ This is an estimate, not tax advice.
 ## Install, run, test, build
 
 ```bash
-cd pakistan-salary-tax-calculator
+git clone https://github.com/codexub/Pakistan-Salary-Tax-Calculator.git
+cd Pakistan-Salary-Tax-Calculator
 nvm install          # first time only: installs Node 24.21.0 from .nvmrc
 nvm use              # run in every new terminal before npm commands
 npm ci               # exact install from package-lock.json
 ```
+
+**Without nvm** (e.g. on Windows): install Node.js **24.21.0 LTS** from https://nodejs.org (it includes npm 11.19.0), check that `node -v` prints `v24.21.0`, then run `npm ci` in the project folder and continue below.
 ```bash
 npm run dev          # development server: http://localhost:5173
 ```

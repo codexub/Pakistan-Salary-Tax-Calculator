@@ -4,6 +4,8 @@ Version 1 has one role. Every job in [jobs-to-be-done.md](jobs-to-be-done.md) li
 
 ## R-1: Salaried Employee
 
+> A Salaried Employee is an individual in Pakistan whose only income is salary from an employer, who has income tax deducted from each payslip and needs to know what they will keep after tax, whether to plan a budget or to compare a salary offer. They can choose the financial year (FY 2025-26 or FY 2026-27), enter their taxable salary as a monthly or annual amount, and see their annual tax payable, average monthly tax and income after income tax. They can also open a step-by-step breakdown of the calculation, see the year's slab table, and follow links to the official sources and assumptions behind it. They must never be shown a tax figure for input the app cannot calculate correctly (blank, malformed or negative amounts, or income above the supported range where super tax would apply), and their salary must never be sent to a server or stored.
+
 **Who:** an individual in Pakistan whose income is entirely salary from an employer. They have no business, freelance, rental or pension income. Their employer deducts income tax from each payslip.
 
 **Example person (a fictional composite):** Hina, 29, works as a quality-assurance engineer at a Lahore software house.

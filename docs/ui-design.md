@@ -1,4 +1,4 @@
-# Interface Design (proposal; not implemented)
+# Interface Design (implemented)
 
 A single-page calculator in React (JavaScript/JSX) with plain CSS. All behaviour and wording come from [user-stories.md](user-stories.md) (BR-, US- and TC- IDs); this document covers only layout, look and structure.
 
@@ -177,8 +177,10 @@ state = { year: 2027, period: "monthly", amountText: "",
 | Above-range message (inline error) | BR-16, US-10 |
 | Layout, focus, contrast | TC-05 |
 
-## 9. Open choices for the reviewer
+## 9. Design choices (as built)
 
-1. **Year control: radio cards instead of a dropdown.** With only two years, radio cards show the dates and tax-year labels without opening anything. A `<select>` can't lay out multi-line options. If you prefer a dropdown, each option would read on one line, e.g. "FY 2026-27 · 1 Jul 2026 – 30 Jun 2027 · Tax Year 2027".
-2. **Annual taxable income in the supporting results.** It isn't required by a story, but it shows the annualised base at a glance. Remove it if you want only the three required supporting figures.
-3. **Accent colour:** deep green `#1F5C4D`. Any single dark accent with ≥ 4.5:1 contrast on white works the same way.
+These were offered as open choices before implementation. No alternative was requested, so the proposed defaults were built.
+
+1. **Year control: radio cards, not a dropdown.** With only two years, radio cards show each year's dates and tax-year label without opening anything; a `<select>` can't lay out multi-line options.
+2. **Annual taxable income is shown among the supporting results,** alongside the three required figures, so the annualised base is visible at a glance.
+3. **Accent colour: deep green `#1F5C4D`,** with 7.8:1 contrast on white.

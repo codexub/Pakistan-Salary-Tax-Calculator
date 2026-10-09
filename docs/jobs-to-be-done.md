@@ -7,55 +7,40 @@ Role: [R-1 Salaried Employee](app-roles.md#r-1-salaried-employee).
 
 ### J-1: Plan spending from expected income after income tax
 - **Role:** R-1
-- **When** I set my monthly and yearly budget,
-- **I want** to know how much of my salary will remain after income tax,
-- **so I can** commit to spending and saving amounts I can actually afford.
+- "When I set my monthly and yearly budget, I want to know how much of my salary will remain after income tax, so I can commit to spending and saving amounts I can actually afford."
 
 ### J-2: Judge a salary offer or raise by what I keep
 - **Role:** R-1
-- **When** I'm offered a new salary or a raise,
-- **I want** to know how much more I would keep after income tax, not just how much more I would be paid,
-- **so I can** decide whether the change is worth it.
+- "When I'm offered a new salary or a raise, I want to know how much more I would keep after income tax, not just how much more I would be paid, so I can decide whether the change is worth it."
 
 ### J-3: Avoid over-budgeting from a figure that excludes other deductions
 - **Role:** R-1
-- **When** I plan from an after-tax figure,
-- **I want** to know which other payroll deductions it does not account for,
-- **so I can** allow for them and not overspend.
+- "When I plan from an after-tax figure, I want to know which other payroll deductions it does not account for, so I can allow for them and not overspend."
 
 ## Understanding how the year's rules affect income
 
 ### J-4: Know which year's rules apply to my income
 - **Role:** R-1
-- **When** budget changes are announced or a new financial year starts,
-- **I want** to know which year's enacted rules govern the income I'm planning around,
-- **so I can** avoid planning on outdated rates or on proposals that never became law.
+- "When budget changes are announced or a new financial year starts, I want to know which year's enacted rules govern the income I'm planning around, so I can avoid planning on outdated rates or on proposals that never became law."
 
 ### J-5: Understand how the rules turn my salary into tax
 - **Role:** R-1
-- **When** I see how much tax I'm expected to pay,
-- **I want** to understand which part of the rules applies to my level of income and how it produces that amount,
-- **so I can** explain the figure to myself or my family and anticipate how it changes if my income changes.
+- "When I see how much tax I'm expected to pay, I want to understand which part of the rules applies to my level of income and how it produces that amount, so I can explain the figure to myself or my family and anticipate how it changes if my income changes."
 
 ### J-6: Anticipate threshold effects on what I keep
 - **Role:** R-1
-- **When** my income is near a point where the rules change,
-- **I want** to know how crossing that point affects what I keep,
-- **so I can** avoid being surprised by a smaller-than-expected gain. Example: in Tax Year 2026, earning just over Rs 10 million triggers a surcharge on the whole tax.
+- "When my income is near a point where the rules change, I want to know how crossing that point affects what I keep, so I can avoid being surprised by a smaller-than-expected gain."
+- *Example:* in Tax Year 2026, earning just over Rs 10 million triggers a surcharge on the whole tax.
 
 ## Checking the basis before relying on an estimate
 
 ### J-7: Verify an estimate before relying on it
 - **Role:** R-1
-- **When** I'm about to make a financial decision based on a tax estimate,
-- **I want** to check the source of its rates, the assumptions it makes and the steps from salary to result,
-- **so I can** trust it, or know exactly where it may not fit my situation.
+- "When I'm about to make a financial decision based on a tax estimate, I want to check the source of its rates, the assumptions it makes and the steps from salary to result, so I can trust it, or know exactly where it may not fit my situation."
 
 ### J-8: Know when an estimate doesn't fit my situation
 - **Role:** R-1
-- **When** my circumstances fall outside what a simple salary estimate covers (for example, very high income or non-salary income),
-- **I want** to be told plainly that the estimate doesn't apply,
-- **so I can** seek a proper calculation instead of relying on a misleading number.
+- "When my circumstances fall outside what a simple salary estimate covers (for example, very high income or non-salary income), I want to be told plainly that the estimate doesn't apply, so I can seek a proper calculation instead of relying on a misleading number."
 
 ---
 
