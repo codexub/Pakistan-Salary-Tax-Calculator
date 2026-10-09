@@ -108,5 +108,10 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 
 **Finding: Netlify's injected badge script.** Netlify adds an HTML comment and `<script async src="/.netlify/scripts/hud?variant=public">` to every page at its edge; the script is the "Powered by Netlify" badge. Because the CSP has no `'unsafe-inline'`, its inline style and inline script are blocked, which produces 4 CSP errors in the console. The badge iframe it creates was removed again, and no extra network request was made. Netlify's docs (https://docs.netlify.com/manage/projects/powered-by-netlify-badge/) state the badge makes no network requests and can be turned off under **Project configuration → General → Powered by Netlify badge**. App behaviour is unaffected. Turning the badge off is the owner's choice in the Netlify dashboard.
 
+**Resolved (same day):** the owner turned the badge off in Netlify. Re-check:
+- three uncached `curl` requests showed no `/.netlify/scripts/hud` tag; only Netlify's inert HTML comment remains;
+- a fresh browser tab on the live URL loaded only `/assets/index-dv841QcC.js` and `/assets/index-By32YrId.css`, with no iframes and **no console messages at all**;
+- TY 2026 Monthly 1,000,000 still gives Rs 3,685,290.00 with the cliff note and 13 steps.
+
 **Not verified on the live site:** browsers other than Claude's embedded Chromium; a physical phone; screen-reader output. The local equivalents were checked by the reviewer earlier.
 

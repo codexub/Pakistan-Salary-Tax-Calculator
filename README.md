@@ -196,4 +196,4 @@ Netlify adds HTTPS, with HSTS and an HTTP→HTTPS redirect. There are no serverl
 - jsdom can't simulate keyboard toggling of `<summary>`, so that part is verified in the browser only.
 - Super tax, exemptions and credits are out of scope (see above).
 - nvm's global default on my machine is still Node 16. Run `nvm use` in the project folder before any npm command.
-- **Netlify badge script:** Netlify injects its "Powered by Netlify" badge script (`/.netlify/scripts/hud`) into the hosted page. The site's CSP blocks its inline code, so the badge doesn't appear and the browser console shows CSP errors from it. It is not part of this project, and Netlify's documentation states it makes no network requests. It can be switched off in Netlify under **Project configuration → General → Powered by Netlify badge**.
+- **Netlify badge:** Netlify injects a "Powered by Netlify" badge script into hosted pages by default. It is **turned off** for this site (Project configuration → General → Powered by Netlify badge), so the live page loads only the app's own JavaScript and CSS and the browser console is clean. Netlify still adds a harmless HTML comment to the page.
