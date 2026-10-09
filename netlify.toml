@@ -1,0 +1,26 @@
+# Netlify: static hosting of the Vite production build. No functions, no server code.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Same version as .nvmrc
+  NODE_VERSION = "24.21.0"
+
+# Security headers for every page. The CSP matches the meta tag added at build time (vite.config.js):
+# scripts may not connect anywhere, so salary data cannot leave the browser (TC-02).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "no-referrer"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+# Hashed build assets never change, so they can be cached for a year.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
