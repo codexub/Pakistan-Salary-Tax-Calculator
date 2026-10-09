@@ -17,6 +17,3 @@ npm-debug.log*
 .DS_Store
 *.tmp
 .cache/
-
-# AI session transcripts are kept locally, not in the repository
-docs/transcripts/

@@ -76,7 +76,7 @@ Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; 
 **Not completed by Claude:**
 - **Clean-copy check in a browser:** the clean copy was checked over HTTP only. Interactive browser checks were done on the working copy before the file reorganisation; the reorganisation changed only file locations, and the same 358 tests pass.
 - **Offline install/build:** not attempted, because a clean install needs the npm registry and Claude had no network-isolated environment. The reviewer reports an offline run passed earlier.
-- **`docs/transcripts/`:** a session transcript was published here for a time, then removed from the repository at the owner's request. It is kept locally only and listed in `.gitignore`.
+- **`docs/transcripts/`:** contains `session-transcript.md` (2026-10-08 22:16:02 UTC → 2026-10-09 01:53:33 UTC), made by a script from `ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl`. It contains user and assistant messages only, verbatim and in order.
 
 ### Public repository verification
 
