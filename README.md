@@ -178,7 +178,9 @@ Netlify adds HTTPS, with HSTS and an HTTP→HTTPS redirect. There are no serverl
 
 **Hand edits:** none. I made no manual changes to the code or documents; all files were written by Claude Code at my direction.
 
-**Time spent:** roughly 2 hours 15 minutes, starting around 3:17 AM on 9 October 2026, including manual testing and README setup.
+**Time spent:** the recorded Claude session spans **about 3 hours 23 minutes**, starting around 3:16 AM PKT on 9 October 2026 (22:16 UTC on 8 October). Of that:
+- **about 2 hours 15 minutes** went to building and completing the app, through my manual testing and the README;
+- the remainder went to configuration for production and deployment: the git repository, publishing to GitHub, Netlify hosting, and the transcript.
 
 ## Browser checks and known limitations
 
