@@ -55,3 +55,27 @@ Other automated evidence:
 | Offline install/build/test | Not run by Claude; R only |
 | Re-announcing an identical repeated result | Not tested; the polite live region text doesn't change, so a screen reader may stay silent (known limitation) |
 | Legal interpretation | No test can establish it: "no marginal relief" rests on the absence of a provision, and the Act-to-year mapping is an interpretation (tax-rules.md §F) |
+
+## Submission package checks (2026-10-09)
+
+Run by Claude on a **fresh `git clone`** of commit `2a4c677` (45 tracked files; no `node_modules` or `dist`) in an empty temporary folder.
+
+| Check | Command(s) | Result |
+|---|---|---|
+| Node selection | `nvm install`, `nvm use` (reads `.nvmrc`) | Node v24.21.0, npm 11.19.0 |
+| Clean install | `npm ci` | 91 packages added, **0 vulnerabilities** |
+| Tests | `npm test` | **5 files, 358 passed** |
+| Production build | `npm run build` | Succeeds: JS 247.10 kB (76.70 kB gzip), CSS 9.02 kB |
+| Dev server | `npm run dev` | Vite 8.3.4 ready; HTTP 200; `/src/main.jsx` served |
+| Preview server | `npm run preview` | HTTP 200; production CSP `connect-src 'none'` present |
+| Reference data | `python3 -I tools/reference_values.py --json` | Byte-identical to `tests/fixtures/expected.json`; `tools/rule_checks.py`: 12/12 boundaries continuous |
+| Stack | inspection | Runtime dependencies only `react` and `react-dom`; 7 `.jsx` components, no TypeScript; one plain CSS file (`src/styles/app.css`), no preprocessors or CSS frameworks; Vite with `@vitejs/plugin-react`; no server code; no network or storage APIs in `src/` |
+| Excluded from the package | `.gitignore`, `git status` | `node_modules/`, `dist/`, `coverage/`, `.env*`, `.claude/` (local tool config), logs, `.DS_Store` |
+| Sensitive content | grep for local paths, emails, keys, tokens, passwords | None found (only package names such as `css-tokenizer` and "design tokens") |
+
+**Not completed by Claude:**
+- **Clean-copy check in a browser:** the clean copy was checked over HTTP only. Interactive browser checks were done on the working copy before the file reorganisation; the reorganisation changed only file locations, and the same 358 tests pass.
+- **Offline install/build:** not attempted, because a clean install needs the npm registry and Claude had no network-isolated environment. The reviewer reports an offline run passed earlier.
+- **Publishing to a public GitHub repository:** pending. There is no GitHub CLI or SSH key on this machine, and pushing needs the owner's own GitHub credentials.
+- **`docs/transcripts/`:** contains only `.gitkeep`. The owner will add the native exports of every AI session; Claude has not created or summarised any transcript.
+

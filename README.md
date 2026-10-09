@@ -117,6 +117,24 @@ npm run preview      # serve the production build: http://localhost:4173
 
 npm 11 may print an `install-scripts` warning about `fsevents`, an optional macOS file-watcher dependency. Tests and builds work without approving it.
 
+## Repository layout
+
+```
+pakistan-salary-tax-calculator/
+├── README.md, package.json, package-lock.json, index.html, vite.config.js, .nvmrc, .gitignore
+├── src/
+│   ├── main.jsx, App.jsx        entry point and page shell
+│   ├── components/              React components (display only)
+│   ├── styles/app.css           plain CSS
+│   ├── utils/                   calculation engine, formatting, validation, page reducer
+│   └── data/                    verified rule sets for each tax year, interface wording
+├── tests/                       Vitest suites + fixtures/expected.json
+├── tools/                       independent Python reference calculators
+└── docs/                        product documents, verification record, transcripts/
+```
+
+`docs/transcripts/` holds the native exports of the AI sessions, in their original formats, as added by me. No summaries are presented as transcripts.
+
 ## Project documents
 
 | Document | Contents |
