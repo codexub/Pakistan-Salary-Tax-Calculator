@@ -150,7 +150,8 @@ muhammadahmad-khan-pk-salary-tax-calculator/
   tests/                  Vitest suites, fixtures/expected.json (generated; see TEST_PLAN.md)
   tools/                  reference_values.py (--stories → user-stories Appendix A; --json → fixture),
                           rule_checks.py (tax-rules.md worked calculations)
-  docs/                   product documents, verification record, transcripts/ (AI session exports)
+  docs/                   product documents and verification record
+  transcripts/            AI session transcript and its original export
 ```
 
 ## 9. Acceptance criteria

@@ -135,7 +135,8 @@ muhammadahmad-khan-pk-salary-tax-calculator/
 │   └── data/                    verified rule sets for each tax year, interface wording
 ├── tests/                       Vitest suites + fixtures/expected.json
 ├── tools/                       independent Python reference calculators
-└── docs/                        product documents, verification record, transcripts/
+├── docs/                        product documents and verification record
+└── transcripts/                 AI session transcript and its original export
 ```
 
 
@@ -163,8 +164,8 @@ Netlify adds HTTPS, with HSTS and an HTTP→HTTPS redirect. There are no serverl
 | [docs/TEST_PLAN.md](docs/TEST_PLAN.md) | Test design, coverage matrix, results log |
 | [docs/manual-test-checklist.md](docs/manual-test-checklist.md) | Manual checks with expected values |
 | [docs/verification.md](docs/verification.md) | Evidence for each story; failed and untested items |
-| [docs/transcripts/session-transcript.md](docs/transcripts/session-transcript.md) | AI session transcript (2026-10-08 22:16:02 UTC → 2026-10-09 01:53:33 UTC; source `ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl`) |
-| [docs/transcripts/ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl](docs/transcripts/ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl) | The session export `session-transcript.md` was made from, unchanged |
+| [transcripts/session-transcript.md](transcripts/session-transcript.md) | AI session transcript (2026-10-08 22:16:02 UTC → 2026-10-09 01:53:33 UTC; source `ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl`) |
+| [transcripts/ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl](transcripts/ca1342fc-38d3-4749-ba6a-7c889bfb0790.jsonl) | The session export `session-transcript.md` was made from, unchanged |
 
 **Status (audit 2026-10-09):** all **14 stories** and all **5 technical criteria** are **Implemented**. One criterion, US-09-AC1 (the breakdown's legal citations must link to the FBR documents), failed in the audit; it was fixed, tested, and then re-checked by me in Safari, Chrome and Firefox. Evidence is in [docs/verification.md](docs/verification.md).
 
