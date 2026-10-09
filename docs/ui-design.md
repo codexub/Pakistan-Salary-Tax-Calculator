@@ -15,7 +15,7 @@ A single-page calculator in React (JavaScript/JSX) with plain CSS. All behaviour
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│  Pakistan Salary Tax Estimator                                       │
+│  Pakistan Salary Tax Calculator                                      │
 │  Income tax and take-home pay for salaried individuals               │
 ├───────────────────────────┬──────────────────────────────────────────┤
 │ ┌───────────────────────┐ │ ┌──────────────────────────────────────┐ │

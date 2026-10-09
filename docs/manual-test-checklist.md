@@ -15,7 +15,7 @@ Tick each **Y** row, and any **B** row you want to see for yourself. A story mov
 |---|---|---|---|
 | 1.1 | In the project folder: `nvm install`, `nvm use`, `npm install` | `.nvmrc` selects Node v24.21.0; install finishes with 0 vulnerabilities | B (Claude's shell); **Y** in your terminal |
 | 1.2 | `npm test` | 5 files, 339 tests passed | A, B; **Y** |
-| 1.3 | `npm run dev`, then open http://localhost:5173 | "VITE v8.3.4 ready"; page titled "Pakistan Salary Tax Estimator" | B (Terminal tab "dev server") |
+| 1.3 | `npm run dev`, then open http://localhost:5173 | "VITE v8.3.4 ready"; page titled "Pakistan Salary Tax Calculator" | B (Terminal tab "dev server") |
 | 1.4 | `npm run build`, then `npm run preview`, then open http://localhost:4173 | Build succeeds; same page | B (Claude's shell) |
 | 1.5 | After install, disconnect from the network; repeat 1.2–1.4 | All still work offline | **Y** |
 

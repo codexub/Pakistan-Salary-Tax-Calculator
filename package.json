@@ -2,7 +2,7 @@
   "name": "pakistan-salary-tax-calculator",
   "version": "0.1.0",
   "private": true,
-  "description": "Browser-only Pakistan salary income tax estimator (FY 2025-26 and FY 2026-27).",
+  "description": "Browser-only Pakistan salary income tax calculator (FY 2025-26 and FY 2026-27).",
   "type": "module",
   "engines": {
     "node": ">=24.21.0"

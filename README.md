@@ -1,4 +1,4 @@
-# Pakistan Salary Tax Estimator
+# Pakistan Salary Tax Calculator
 
 A single-page calculator for **salaried individuals in Pakistan**. You enter your taxable salary, and it shows:
 - your annual income tax and average monthly tax;

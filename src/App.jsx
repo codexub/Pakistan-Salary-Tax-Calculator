@@ -11,7 +11,7 @@ export default function App() {
     <>
       <header className="page-header">
         <div className="container">
-          <h1 className="page-header__title">Pakistan Salary Tax Estimator</h1>
+          <h1 className="page-header__title">Pakistan Salary Tax Calculator</h1>
           <p className="page-header__subtitle">Income tax and take-home pay for salaried individuals</p>
         </div>
       </header>
